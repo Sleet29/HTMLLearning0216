@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>박스 모델(Box Model) : box-sizing:content-box</title>
+	  <style>
+	  	div {box-sizing: content-box;}
+		/* 한 줄 */
+		#first {background-color: red;}
+		/* 가로 100px, 	세로 100px 크기의 orange 색의 박스 */
+		#second {width: 100px; height: 100px; background-color: orange;}
+		/* 가로 100px + 20*2px, 세로 100px + 20*2px 크기의 yellow 색의 박스 */
+		#third {width: 100px; height: 100px; background-color: yellow; 
+			    padding:20px;}
+	  
+	  	/* padding(내부공백), margin(외부공백)은 위, 오른쪽, 아래, 왼쪽 	4가지의 값을 갖는다.
+	  				예1) padding의 값을 위 오른쪽 아래 왼쪽 모두 10px 적용하려면
+	  			padding: 10px 10px 10px 10px; 또는
+	  			padding: 10px; 작성한다.
+	  						또는
+	  			padding-top:10px;		padding-right:10px;
+	  			padding-bottom:10px;		padding-left:10px;
+	  			
+	  				예2) padding: 10px 5px;
+	  						의미) 위,아래는 10px가 적용되고 오른쪽,왼쪽은 5px가 적용된다.
+	  						
+	  				예3) padding: 10px 7px 8px;
+	  						의미) 위 10px가 적용되고 오른쪽,왼쪽은 7px가 적용되고
+	  							 아래는 8px가 적용된다.
+	  	*/
+	  
+	  </style>
+	  
+	  
+
+</head>
+<body>
+
+	<div id="first">first</div>
+	<div id="second">second</div>
+	<div id="third">third</div>
+	<div id="third_clip">third_clip</div>
+	<div id="fourth">fourth</div>
+	<div id="fifth">fifth</div>
+</body>
+</html>

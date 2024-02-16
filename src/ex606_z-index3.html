@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--
+	position 속성은 문서 상에 요소를 배치하는 방법을 지정합니다
+	1. static(기본값) : HTML 순서대로 화면에 표시됩니다.
+-->
+<title>위치/크기 지정 속성</title>
+	<style>
+	div{
+		width : 100px;
+		height: 100px;
+		position:absolute;
+	}
+	/* visibility 속성 : HTML 태그를 출력할 것인지 숨길 것인지 지정
+		hidden - 숨김
+		visible - 보임
+	*/
+	#box1{
+	top : 30px;
+	left : 50px;
+	background-color : red;
+	z-index:10;}
+	
+	#box2{
+	top : 55px;
+	left: 75px;
+	background-color : blue;}
+	
+	#box3{
+	top : 80px;
+	left: 100px;
+	background-color : green;
+	z-index:11;
+	}
+	</style>
+</head>
+<body>
+	<div id=box1></div>
+	<div id=box2></div>
+	<div id=box3></div>
+</body>
+</html>
